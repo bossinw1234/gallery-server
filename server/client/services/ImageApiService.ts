@@ -3,7 +3,7 @@ import type { PaginatedImagesResponse } from '../types/index';
 class ImageApiService {
   private baseUrl: string;
 
-  constructor(baseUrl: string = '/api') {
+  constructor(baseUrl: string = import.meta.env.VITE_API_URL || '/api') {
     this.baseUrl = baseUrl;
   }
 

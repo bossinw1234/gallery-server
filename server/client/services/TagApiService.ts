@@ -3,7 +3,7 @@ import type { TagListResponse } from '../types/index';
 class TagApiService {
   private baseUrl: string;
 
-  constructor(baseUrl: string = '/api') {
+  constructor(baseUrl: string = import.meta.env.VITE_API_URL || '/api') {
     this.baseUrl = baseUrl;
   }
 
