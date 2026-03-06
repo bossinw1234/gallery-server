@@ -1,9 +1,9 @@
 import express from "express";
 import cors from "cors";
-import { createImageRoutes } from "./routes/image.routes";
-import { createTagRoutes } from "./routes/tag.routes";
-import { ImageController } from "./controllers/Image.controller";
-import { TagController } from "./controllers/tag.controller";
+import { createImageRoutes } from "./routes/image.routes.js";
+import { createTagRoutes } from "./routes/tag.routes.js";
+import { ImageController } from "./controllers/Image.controller.js";
+import { TagController } from "./controllers/tag.controller.js";
 import { PrismaClient } from "@prisma/client";
 
 const prisma = new PrismaClient();

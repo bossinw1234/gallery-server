@@ -1,5 +1,5 @@
 import { Request, Response } from 'express';
-import { TagService } from '../services/tag.service';
+import { TagService } from '../services/tag.service.js';
 
 
 export class TagController {
